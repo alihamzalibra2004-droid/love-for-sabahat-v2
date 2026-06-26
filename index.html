@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Sabahat ❤️</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#170021,#4b006e,#ff4fa3,#25003b);
+background-size:400% 400%;
+animation:bg 12s infinite;
+color:#fff;
+text-align:center;
+}
+@keyframes bg{
+0%{background-position:0 50%}
+50%{background-position:100% 50%}
+100%{background-position:0 50%}
+}
+.page{
+position:absolute;
+width:100%;
+padding:25px;
+transition:.8s;
+}
+#love{
+display:none;
+animation:fade 1.2s;
+}
+@keyframes fade{
+from{opacity:0;transform:scale(.96)}
+to{opacity:1;transform:scale(1)}
+}
+.heart{
+font-size:95px;
+cursor:pointer;
+animation:beat 1s infinite;
+filter:drop-shadow(0 0 20px #ff6bc7);
+}
+@keyframes beat{
+50%{transform:scale(1.18)}
+}
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:#fff;
+border-radius:50%;
+animation:blink 2s infinite;
+}
+@keyframes blink{
+50%{opacity:.2}
+}
+.msg{
+max-width:700px;
+line-height:1.8;
+font-size:19px;
+text-shadow:0 0 10px rgba(255,255,255,.35);
+}
+h1{
+margin:18px 0;
+}
+.end{
+margin-top:25px;
+font-size:24px;
+color:#ffd6f1;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+for(let i=0;i<60;i++){
+let s=document.createElement("div");
+s.className="star";
+s.style.left=Math.random()*100+"%";
+s.style.top=Math.random()*100+"%";
+s.style.animationDelay=Math.random()*2+"s";
+document.body.appendChild(s);
+}
+</script>
+
+<div id="start" class="page">
+
+<div class="heart" onclick="openLove()">❤️</div>
+
+<h1>Someone Left You A Surprise</h1>
+
+<p>Tap the heart to unlock 💖</p>
+
+</div>
+
+<div id="love" class="page">
+
+<h1>For My Beautiful Sabahat ❤️</h1>
+
+<div class="msg">
+
+<p>Dear Sabahat,</p><br>
+
+<p>I'm sorry I couldn't give you enough time lately. Life became busy, but my heart never got busy loving you.</p><br>
+
+<p><b>Mjhe apse boht zda pyaar hai. ❤️</b></p><br>
+
+<p>You make my ordinary days feel beautiful. Every smile of yours is something I never want to lose.</p><br>
+
+<p><b>Naraz ni hwa kryn... mje takleef hoti. 🥹❤️</b></p><br>
+
+<p>I may not always express it perfectly, but I'll always choose you.</p><br>
+
+<p class="end">Forever & Always ❤️</p>
+
+<h2>Ali Hamza</h2>
+
+</div>
+
+</div>
+<script>
+function openLove(){
+document.getElementById("start").style.display="none";
+document.getElementById("love").style.display="block";
+}
+</script>
+
+</body>
+</html>
